@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="yGd-qy-9W6" customClass="AlbumCell" customModule="SearchMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q1v-rZ-rFv">
+                <rect key="frame" x="0.0" y="0.0" width="249" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="yLm-hk-QET">
+                        <rect key="frame" x="0.0" y="0.0" width="249" height="281"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gif-pO-Fuz">
+                        <rect key="frame" x="0.0" y="307" width="249" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gti-Co-kEp">
+                        <rect key="frame" x="0.0" y="286" width="249" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Gif-pO-Fuz" firstAttribute="leading" secondItem="q1v-rZ-rFv" secondAttribute="leading" id="44j-GZ-5XY"/>
+                    <constraint firstAttribute="bottom" secondItem="Gif-pO-Fuz" secondAttribute="bottom" constant="5" id="5ZN-AG-Xhv"/>
+                    <constraint firstItem="yLm-hk-QET" firstAttribute="leading" secondItem="q1v-rZ-rFv" secondAttribute="leading" id="DjR-Sd-KyJ"/>
+                    <constraint firstItem="Gif-pO-Fuz" firstAttribute="top" secondItem="gti-Co-kEp" secondAttribute="bottom" id="Dly-pO-LTT"/>
+                    <constraint firstItem="yLm-hk-QET" firstAttribute="leading" secondItem="q1v-rZ-rFv" secondAttribute="leading" id="SnK-2S-9U2"/>
+                    <constraint firstAttribute="trailing" secondItem="Gif-pO-Fuz" secondAttribute="trailing" id="XbF-60-YZZ"/>
+                    <constraint firstItem="gti-Co-kEp" firstAttribute="top" secondItem="yLm-hk-QET" secondAttribute="bottom" constant="5" id="YBn-4x-oRJ"/>
+                    <constraint firstAttribute="trailing" secondItem="yLm-hk-QET" secondAttribute="trailing" id="ack-aj-i5n"/>
+                    <constraint firstItem="gti-Co-kEp" firstAttribute="leading" secondItem="q1v-rZ-rFv" secondAttribute="leading" id="d5o-Lb-C2y"/>
+                    <constraint firstAttribute="trailing" secondItem="gti-Co-kEp" secondAttribute="trailing" id="fhw-8I-KKc"/>
+                    <constraint firstItem="yLm-hk-QET" firstAttribute="top" secondItem="q1v-rZ-rFv" secondAttribute="top" id="oa7-xn-YYb"/>
+                    <constraint firstItem="yLm-hk-QET" firstAttribute="top" secondItem="q1v-rZ-rFv" secondAttribute="top" id="tZY-SA-CHp"/>
+                    <constraint firstAttribute="trailing" secondItem="yLm-hk-QET" secondAttribute="trailing" id="v27-eY-2Oy"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="249" height="330"/>
+            <connections>
+                <outlet property="albumName" destination="gti-Co-kEp" id="e0J-5i-xOw"/>
+                <outlet property="artistName" destination="Gif-pO-Fuz" id="4jc-tf-Bug"/>
+                <outlet property="uiImageView" destination="yLm-hk-QET" id="KkU-dY-fbH"/>
+            </connections>
+            <point key="canvasLocation" x="245.6521739130435" y="69.642857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

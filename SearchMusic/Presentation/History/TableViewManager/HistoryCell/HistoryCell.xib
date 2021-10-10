@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="92" id="Q9h-r2-loB" customClass="HistoryCell" customModule="SearchMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q9h-r2-loB" id="F4a-pg-Fy5">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wzo-f8-xaT">
+                        <rect key="frame" x="0.0" y="0.0" width="436" height="92"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wzo-f8-xaT" secondAttribute="trailing" id="d9Z-At-18V"/>
+                    <constraint firstItem="Wzo-f8-xaT" firstAttribute="top" secondItem="F4a-pg-Fy5" secondAttribute="top" id="fzW-TG-nol"/>
+                    <constraint firstAttribute="bottom" secondItem="Wzo-f8-xaT" secondAttribute="bottom" id="jrx-Lr-glA"/>
+                    <constraint firstItem="Wzo-f8-xaT" firstAttribute="leading" secondItem="F4a-pg-Fy5" secondAttribute="leading" id="lVL-DG-reP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="historyLabel" destination="Wzo-f8-xaT" id="BH7-0y-Pxm"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="87.053571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
